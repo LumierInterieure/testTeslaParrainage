@@ -25,12 +25,6 @@ border-radius: 6px;
              margin-top: -53%;
 }
 
-#logo
-{
-               width: 10em;
-               float: left;
-}
-
 #barreFixe {
                position: fixed;
                opacity: 100%;
@@ -117,8 +111,13 @@ border-radius: 6px;
                {
                               display: none;
                }
-}
 
+               #logo
+{
+               width: 10em;
+               float: left;
+}
+}
 
 
 @media screen and (max-width: 3085px) and (min-width: 2856px) {   /***** 65  *****/
@@ -142,8 +141,12 @@ border-radius: 6px;
                               display: none;
                }
                
-
-}
+               #logo
+               {
+                              width: 9.5em;
+                              float: left;
+               }
+              }
 
 @media screen and (max-width: 2856px) and (min-width: 2628px) {   /*****  60 *****/
 
@@ -164,6 +167,12 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: none;
+               }
+               
+               #logo
+               {
+                              width: 9em;
+                              float: left;
                }
                
 
@@ -190,6 +199,12 @@ border-radius: 6px;
                               display: none;
                }
                
+               #logo
+               {
+                              width: 8.87em;
+                              float: left;
+               }
+               
 
 }
 
@@ -212,6 +227,12 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: none;
+               }
+               
+               #logo
+               {
+                              width: 8.16em;
+                              float: left;
                }
                
 
@@ -238,6 +259,12 @@ border-radius: 6px;
                               display: none;
                }
                
+               #logo
+               {
+                              width: 7.45em;
+                              float: left;
+               }
+               
 
 }
 
@@ -262,6 +289,12 @@ border-radius: 6px;
                               display: none;
                }
                
+               #logo
+               {
+                              width: 7.74em;
+                              float: left;
+               }
+               
 
 }
 
@@ -284,6 +317,12 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: none;
+               }
+               
+               #logo
+               {
+                              width: 7.03em;
+                              float: left;
                }
                
 
@@ -318,6 +357,12 @@ border-radius: 6px;
                               width: 115px;
                }
                
+               #logo
+               {
+                              width: 6.32em;
+                              float: left;
+               }
+               
 }
 
 @media screen and (max-width: 1256px) and (min-width: 1028px) {   /*****  25 *****/
@@ -344,7 +389,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -375px;
+                              margin-left: -330px;
+               }
+
+               #logo
+               {
+                              width: 5.61em;
+                              float: left;
                }
 }
 
@@ -372,7 +423,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -300px;
+                              margin-left: -230px;
+               }
+
+               #logo
+               {
+                              width: 4.9em;
+                              float: left;
                }
                
 
@@ -401,7 +458,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -225px;
+                              margin-left: -150px;
+               }
+
+               #logo
+               {
+                              width: 4.19em;
+                              float: left;
                }
 
 }
@@ -429,7 +492,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -150px;
+                              margin-left: -110px;
+               }
+
+               #logo
+               {
+                              width: 3em;
+                              float: left;
                }
 
 }
@@ -457,7 +526,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -125px;
+                              margin-left: -90px;
+               }
+
+               #logo
+               {
+                              width: 2.8em;
+                              float: left;
                }
                
 
@@ -486,7 +561,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -100px;
+                              margin-left: -80px;
+               }
+
+               #logo
+               {
+                              width: 2.6em;
+                              float: left;
                }
 
 
@@ -515,7 +596,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -80px;
+                              margin-left: -75px;
+               }
+
+               #logo
+               {
+                              width: 2.4em;
+                              float: left;
                }
                
 
@@ -544,7 +631,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -60px;
+                              margin-left: -70px;
+               }
+
+               #logo
+               {
+                              width: 2.2em;
+                              float: left;
                }
                
 
@@ -573,7 +666,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -40px;
+                              margin-left: -65px;
+               }
+
+               #logo
+               {
+                              width: 2em;
+                              float: left;
                }
                
 
@@ -602,7 +701,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -30px;
+                              margin-left: -60px;
+               }
+
+               #logo
+               {
+                              width: 1em;
+                              float: left;
                }
                
 
@@ -631,7 +736,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -20px;
+                              margin-left: -55px;
+               }
+
+               #logo
+               {
+                              width: 1em;
+                              float: left;
                }
                
 
@@ -660,7 +771,13 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -15px;
+                              margin-left: -50px;
+               }
+
+               #logo
+               {
+                              width: 1em;
+                              float: left;
                }
                
 
@@ -689,6 +806,12 @@ border-radius: 6px;
                .menuDeroulant
                {
                               display: block;
-                              margin-left: -10px;
+                              margin-left: -45px; 
+               }
+
+               #logo
+               {
+                              width: 1em;
+                              float: left;
                }
 }
