@@ -614,7 +614,6 @@ border-radius: 6px;
                                padding-left: 54px;
                                margin-left: 50;
                 }
- 
                 ul 
                 {
                  margin-left: 400px;
@@ -862,7 +861,7 @@ border-radius: 6px;
                               padding-left: 17px;
                               display: none;
                               text-align: center;
-                              margin-left: -610px;
+                              margin-left: -165px;
                               width: 350px;
                }
 
@@ -874,6 +873,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: 20px
                }
 
                div nav ul:hover li
@@ -909,7 +909,7 @@ border-radius: 6px;
                 padding-left: 17px;
                 display: none;
                 text-align: center;
-                margin-left: -600px;
+                margin-left: -250px;
                 width: 555px;
                }
 
@@ -921,6 +921,12 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -40px
+               }
+
+               div nav ul:hover
+               {
+                margin-left: 525px;
                }
 
                div nav ul:hover li
@@ -955,10 +961,15 @@ border-radius: 6px;
                 padding-left: 17px;
                 display: none;
                 text-align: center;
-                margin-left: -465px;
+                margin-left: -225px;
                 width: 490px;
                }
 
+
+               div nav ul:hover
+               {
+                margin-left: 425px;
+               }
 
                .menuDeroulant
                {
@@ -968,6 +979,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -50px;
                }
 
                div nav ul:hover li
@@ -997,15 +1009,22 @@ border-radius: 6px;
 
 @media screen and (max-width: 800px) and (min-width: 571px) {   /*****  15 *****/
 
-               li
-               {
-                margin-top: 0px;
-                padding-left: 17px;
-                display: none;
-                text-align: center;
-                margin-left: -400px;
-                width: 520px;
-               }
+  li
+  {
+                 
+   margin-top: 0px;
+   padding-left: 17px;
+   display: none;
+   text-align: center;
+   margin-left: -225px;
+   width: 490px;
+  }
+
+
+  div nav ul:hover
+  {
+   margin-left: 275px;
+  }
 
                .menuDeroulant
                {
@@ -1015,6 +1034,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -60px;
                }
 
                .navTexte
@@ -1061,6 +1081,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -70px;
                }
 
                .navTexte
@@ -1107,6 +1128,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -80px;
                }
 
                .navTexte
@@ -1154,6 +1176,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -90px;
                }
 
                .navTexte
@@ -1201,6 +1224,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -100px;
                }
 
                .navTexte
@@ -1248,6 +1272,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -110px;
                }
 
                .navTexte
@@ -1295,6 +1320,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -120px;
                }
 
                .navTexte
@@ -1342,6 +1368,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -130px;
                }
 
                .navTexte
@@ -1389,6 +1416,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -140px;
                }
 
                .navTexte
@@ -1436,6 +1464,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -150px;
                }
 
                .navTexte
@@ -1483,6 +1512,7 @@ border-radius: 6px;
                ul
                {
                 display: block;
+                margin-left: -160px;
                }
 
                .navTexte
