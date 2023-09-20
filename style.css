@@ -88,8 +88,9 @@ border-radius: 6px;
                 margin-left: 5%;
                }
 
+               
+             
 
-               /***************MEDIA QUERIES*******************/
                @media screen and (min-width: 7771px) {   /*****  175 *****/
 
                 li
@@ -853,17 +854,25 @@ border-radius: 6px;
 
 }
 
+
 @media screen and (max-width: 1485px) and (min-width: 1256px) {   /*****  30 *****/
 
-               li
-               {
-                              margin-top: 0px;
-                              padding-left: 17px;
-                              display: none;
-                              text-align: center;
-                              margin-left: -165px;
-                              width: 350px;
-               }
+  li
+  {
+                 
+   margin-top: 0px;
+   padding-left: 17px;
+   display: none;
+   text-align: center;
+   margin-left: -75%;
+   width: 150%;
+  }
+
+
+  div nav ul:hover
+  {
+   margin-left: -15%;
+  }
 
                .menuDeroulant
                {
@@ -902,16 +911,22 @@ border-radius: 6px;
 
 @media screen and (max-width: 1256px) and (min-width: 1028px) {   /*****  25 *****/
 
-               li
-               {
-                              
-                margin-top: 0px;
-                padding-left: 17px;
-                display: none;
-                text-align: center;
-                margin-left: -170px;
-                width: 350px;
-               }
+  li
+  {
+                 
+   margin-top: 0px;
+   padding-left: 17px;
+   display: none;
+   text-align: center;
+   margin-left: -75%;
+   width: 150%;
+  }
+
+
+  div nav ul:hover
+  {
+   margin-left: -15%;
+  }
 
                .menuDeroulant
                {
@@ -922,11 +937,6 @@ border-radius: 6px;
                {
                 display: block;
                 margin-left: -40px
-               }
-
-               div nav ul:hover
-               {
-                margin-left: 450px;
                }
 
                div nav ul:hover li
@@ -954,22 +964,22 @@ border-radius: 6px;
 
 @media screen and (max-width: 1028px) and (min-width: 800px) {   /*****  20 *****/
 
-               li
-               {
-                              
-                margin-top: 0px;
-                padding-left: 17px;
-                display: none;
-                text-align: center;
-                margin-left: -160px;
-                width: 325px;
-               }
+  li
+  {
+                 
+   margin-top: 0px;
+   padding-left: 17px;
+   display: none;
+   text-align: center;
+   margin-left: -75%;
+   width: 150%;
+  }
 
 
-               div nav ul:hover
-               {
-                margin-left: 350px;
-               }
+  div nav ul:hover
+  {
+   margin-left: -15%;
+  }
 
                .menuDeroulant
                {
@@ -1010,21 +1020,21 @@ border-radius: 6px;
 @media screen and (max-width: 800px) and (min-width: 571px) {   /*****  15 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -150px;
-   width: 300px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: 250px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1064,21 +1074,21 @@ border-radius: 6px;
 @media screen and (max-width: 571px) and (min-width: 411px) {   /*****  10 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -140px;
-   width: 275px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: 150px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1124,14 +1134,14 @@ border-radius: 6px;
    padding-left: 17px;
    display: none;
    text-align: center;
-   margin-left: -130px;
-   width: 250px;
+   margin-left: -75%;
+   width: 150%;
   }
 
 
   div nav ul:hover
   {
-   margin-left: 50px;
+   margin-left: -15%;
   }
 
                .menuDeroulant
@@ -1173,21 +1183,21 @@ border-radius: 6px;
 @media screen and (max-width: 365px) and (min-width: 320px) {   /*****  8 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -120px;
-   width: 225px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: -50px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1228,21 +1238,21 @@ border-radius: 6px;
 @media screen and (max-width: 320px) and (min-width: 274px) {   /*****  7 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -110px;
-   width: 200px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: -150px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1283,21 +1293,21 @@ border-radius: 6px;
 @media screen and (max-width: 274px) and (min-width: 228px) {   /*****  6 *****/
                
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -100px;
-   width: 175px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: -250px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1338,21 +1348,21 @@ border-radius: 6px;
 @media screen and (max-width: 228px) and (min-width: 182px) {   /*****  5 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -90px;
-   width: 150px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: -350px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1393,21 +1403,23 @@ border-radius: 6px;
 @media screen and (max-width: 182px) and (min-width: 137px) {   /*****  4 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -80px;
-   width: 125px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
 
-  div nav ul:hover
-  {
-   margin-left: -450px;
-  }
 
                .menuDeroulant
                {
@@ -1448,21 +1460,21 @@ border-radius: 6px;
 @media screen and (max-width: 137px) and (min-width: 45px) {   /*****  3 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -70px;
-   width: 100px;
-  }
-
-
-  div nav ul:hover
-  {
-   margin-left: -550px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
                .menuDeroulant
                {
@@ -1503,21 +1515,22 @@ border-radius: 6px;
 @media screen and (min-width: 45px) and (max-width: 91px) {   /*****  2 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -60px;
-   width: 75px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
-
-  div nav ul:hover
-  {
-   margin-left: -650px;
-  }
 
                .menuDeroulant
                {
@@ -1558,21 +1571,23 @@ border-radius: 6px;
 @media screen and (max-width: 45px) {   /*****  1 *****/
 
   li
-  {
-                 
-   margin-top: 0px;
-   padding-left: 17px;
-   display: none;
-   text-align: center;
-   margin-left: -50px;
-   width: 50px;
-  }
+               {
+                              
+                margin-top: 0px;
+                padding-left: 17px;
+                display: none;
+                text-align: center;
+                margin-left: -75%;
+                width: 150%;
+               }
+             
+             
+               div nav ul:hover
+               {
+                margin-left: -15%;
+               }
 
 
-  div nav ul:hover
-  {
-   margin-left: -750px;
-  }
 
                .menuDeroulant
                {
