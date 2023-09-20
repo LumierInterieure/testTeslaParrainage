@@ -21,19 +21,19 @@ border-radius: 6px;
 
 #imageSite
 {
-  width: 113%;
+             width: 112%;
              margin-right: -7%;
-             margin-left: -7%;
+             margin-left: -14%;
              margin-top: -30%;
 }
 
 #barreFixe {
                position: fixed;
                opacity: 100%;
-               width: 102%;
+               width: 106%;
                height: 11%;
                margin-top: -1%;
-               margin-left: -1%;
+               margin-left: -3%;
                display: flex;
                background-color: rgba(0, 0, 0, 0.500);
                font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;
