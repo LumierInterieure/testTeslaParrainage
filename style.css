@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
 body
 {
 text-align: center;
@@ -13,25 +15,25 @@ margin-bottom: 5%;
 width: 90%;
 height: 90%;
 color: black;
-background-color: white;
 text-align: center;
 border-radius: 6px;
 }
 
 #imageSite
 {
-             width: 130%;
-             margin-left: -10%;
+  width: 113%;
+             margin-right: -7%;
+             margin-left: -7%;
              margin-top: -30%;
 }
 
 #barreFixe {
                position: fixed;
                opacity: 100%;
-               width: 100%;
+               width: 102%;
                height: 11%;
                margin-top: -1%;
-               margin-left: -0.2%;
+               margin-left: -1%;
                display: flex;
                background-color: rgba(0, 0, 0, 0.500);
                font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;
@@ -89,7 +91,17 @@ border-radius: 6px;
                }
 
                
-             
+             article
+             {
+              font-family: 'Croissant one' ,'Courier New', Courier, monospace;
+              text-align: center;
+              width: 115%;
+              margin-left: -7%;
+              font-size: 100%;
+              line-height: 200%;
+              border: 1px black solid;
+              padding: 5%;
+             }
 
                @media screen and (min-width: 7771px) {   /*****  175 *****/
 
@@ -113,6 +125,7 @@ border-radius: 6px;
                 {
                              width: 120%;
                              margin-top: -60%;
+                             position: fixed;
                 }
               }
 
@@ -869,10 +882,6 @@ border-radius: 6px;
   }
 
 
-  div nav ul:hover
-  {
-   margin-left: -15%;
-  }
 
                .menuDeroulant
                {
@@ -888,12 +897,20 @@ border-radius: 6px;
                div nav ul:hover li
                {
                 display: block;
-                padding-left: 40px;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
                 padding-top: 15px;
                 padding-bottom: 15px;
                 border: #fff solid 1px;
                 background-color: rgba(25, 60, 99, 0.418);
                }
+
+               
+  div nav ul:hover
+  {
+   margin-left: 5%;
+  }
 
                div nav ul:hover .menuDeroulant
                {
@@ -921,12 +938,23 @@ border-radius: 6px;
    margin-left: -75%;
    width: 150%;
   }
-
-
-  div nav ul:hover
+  div nav ul:hover li
   {
-   margin-left: -15%;
+   display: block;
+   margin-left: -90%;
+   padding-left: 30%;
+   padding-right: 30%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border: #fff solid 1px;
+   background-color: rgba(25, 60, 99, 0.418);
   }
+
+  
+div nav ul:hover
+{
+margin-left: -5%;
+}
 
                .menuDeroulant
                {
@@ -937,16 +965,6 @@ border-radius: 6px;
                {
                 display: block;
                 margin-left: -40px
-               }
-
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
                }
 
                div nav ul:hover .menuDeroulant
@@ -975,11 +993,23 @@ border-radius: 6px;
    width: 150%;
   }
 
-
-  div nav ul:hover
+  div nav ul:hover li
   {
-   margin-left: -15%;
+   display: block;
+   margin-left: -90%;
+   padding-left: 30%;
+   padding-right: 30%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border: #fff solid 1px;
+   background-color: rgba(25, 60, 99, 0.418);
   }
+
+  
+div nav ul:hover
+{
+margin-left: -5%;
+}
 
                .menuDeroulant
                {
@@ -1030,11 +1060,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1053,15 +1095,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1084,11 +1117,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1107,15 +1152,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1138,11 +1174,23 @@ border-radius: 6px;
    width: 150%;
   }
 
-
-  div nav ul:hover
+  div nav ul:hover li
   {
-   margin-left: -15%;
+   display: block;
+   margin-left: -90%;
+   padding-left: 30%;
+   padding-right: 30%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border: #fff solid 1px;
+   background-color: rgba(25, 60, 99, 0.418);
   }
+
+  
+div nav ul:hover
+{
+margin-left: -5%;
+}
 
                .menuDeroulant
                {
@@ -1161,15 +1209,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1193,11 +1232,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1216,15 +1267,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1248,11 +1290,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1271,15 +1325,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1302,12 +1347,23 @@ border-radius: 6px;
                 margin-left: -75%;
                 width: 150%;
                }
-             
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1326,15 +1382,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1358,11 +1405,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
                .menuDeroulant
                {
@@ -1379,16 +1438,6 @@ border-radius: 6px;
                {
                               font-size: 25px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
-               }
-
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
                }
 
                div nav ul:hover .menuDeroulant
@@ -1413,12 +1462,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
-
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
 
                .menuDeroulant
@@ -1438,15 +1498,6 @@ border-radius: 6px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
                }
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
@@ -1470,12 +1521,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
-
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
                .menuDeroulant
                {
                               display: block;
@@ -1491,16 +1553,6 @@ border-radius: 6px;
                {
                               font-size: 25px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
-               }
-
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
                }
 
                div nav ul:hover .menuDeroulant
@@ -1525,11 +1577,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
+               div nav ul:hover li
                {
-                margin-left: -15%;
+                display: block;
+                margin-left: -90%;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: #fff solid 1px;
+                background-color: rgba(25, 60, 99, 0.418);
                }
+             
+               
+             div nav ul:hover
+             {
+             margin-left: -5%;
+             }
 
 
                .menuDeroulant
@@ -1547,16 +1611,6 @@ border-radius: 6px;
                {
                               font-size: 25px;
                               font-family: 'PT Sans Narrow' ,Arial, Helvetica, sans-serif;  
-               }
-
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
                }
 
                div nav ul:hover .menuDeroulant
@@ -1581,11 +1635,23 @@ border-radius: 6px;
                 width: 150%;
                }
              
-             
-               div nav ul:hover
-               {
-                margin-left: -15%;
-               }
+             div nav ul:hover li
+  {
+   display: block;
+   margin-left: -90%;
+   padding-left: 30%;
+   padding-right: 30%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border: #fff solid 1px;
+   background-color: rgba(25, 60, 99, 0.418);
+  }
+
+  
+div nav ul:hover
+{
+margin-left: -5%;
+}
 
 
 
@@ -1607,15 +1673,6 @@ border-radius: 6px;
                }
 
 
-               div nav ul:hover li
-               {
-                display: block;
-                padding-left: 40px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: #fff solid 1px;
-                background-color: rgba(25, 60, 99, 0.418);
-               }
 
                div nav ul:hover .menuDeroulant
                {
