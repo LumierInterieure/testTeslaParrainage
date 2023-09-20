@@ -48,7 +48,6 @@ border-radius: 6px;
                li
                {
                 font-size: 150%;
-                margin-left: 5%;
                }
 
                nav
@@ -111,11 +110,6 @@ border-radius: 6px;
                                padding-left: 134px;
                                margin-left: 50;
                 }
- 
-                ul 
-                {
-                 margin-left: 2400px;
-                }
                 
                 .menuDeroulant
                 {
@@ -128,7 +122,6 @@ border-radius: 6px;
                              position: fixed;
                 }
               }
-
                @media screen and (max-width: 7771px) and (min-width: 7542px) {   /*****  170 *****/
 
                 li
