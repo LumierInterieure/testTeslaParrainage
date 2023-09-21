@@ -7,6 +7,11 @@ body
 text-align: center;
 }
 
+html, body {
+  scroll-behavior: smooth;
+  transition-duration: 0.25s; /* Ajustez la durée selon vos préférences (par exemple, 0.25s ou 0.5s) */
+}
+
 section
 {
 margin-left: 5%;
@@ -14,7 +19,7 @@ margin-top: 6%;
 margin-bottom: 5%;
 width: 90%;
 height: 90%;
-color: black;
+color: rgb(255, 255, 255);
 text-align: center;
 border-radius: 6px;
 }
@@ -98,9 +103,29 @@ border-radius: 6px;
               width: 102.5%;
               margin-left: -6.2%;
               font-size: 100%;
-              line-height: 200%;
+              line-height: 400%;
               border: 1px black solid;
               padding: 5%;
+              margin-top: -0.4%;
+              padding-top: 25%;
+              padding-bottom: 25%;
+             }
+
+             #articleParrain
+             {
+              background-image: url(img/free\ Road.jpg);
+              background-repeat: no-repeat;
+              background-size: 3000px;
+              background-position: 50%;
+             }
+
+             #articleFilleul
+             {
+              margin-top: 0%;background-image: url(img/car\ Handshake.jpg);
+              background-repeat: no-repeat;
+              background-size: 2000px;
+              background-position: 50%;
+              color: black;
              }
 
                @media screen and (min-width: 7771px) {   /*****  175 *****/

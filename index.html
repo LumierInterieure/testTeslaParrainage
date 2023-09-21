@@ -1,53 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-               <meta charset="UTF-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title> Tesla Parrainage</title>
-               <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Parrainage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-               <div id="barreFixe">
-                              <a href="index.html"> <img src="img/Logo.png" alt="Logo" id="logo"> </a>
-                              <nav>
+    <div id="barreFixe">
+        <a href="index.html"><img src="img/Logo.png" alt="Logo" id="logo"></a>
+        <nav>
+            <ul id="navPrincipale">
+                <div class="menuDeroulant"> Menu </div>
+                <li><a href="#parrainez" class="navTexte">Parrainez</a></li>
+                <li><a href="#devenezFilleul" class="navTexte">Devenez filleul</a></li>
+            </ul>
+        </nav>
+    </div>
 
-                                             <ul id="navPrincipale">
-                                                            <div class="menuDeroulant"> Menu </div>
-                                                            <li> <a href="#parrainez" class="navTexte"> Parrainez </a> </li>
-                                                            <li> <a href="#devenezFilleul" class="navTexte"> Devenez filleul </a> </li>
-                                             </ul>
-                              </nav>
-               </div>
+    <br>
 
-<br>
-<section>
+    <section>
+        <div>
+            <img src="img/image site ideale.jpg" alt="Photo importante" id="imageSite">
+        </div>
 
-               <div>
-<img src="img/image site ideale.jpg" alt="Photo importante" id="imageSite">
-                              
-               </div>
+        <article id="articleParrain">
+            <h1 id="titreParrain">Économisez 300€ sur la consommation énergétique de votre voiture Tesla</h1>
+            <p id="texteParrain">
+                <a name="parrainez"></a>
+                Découvrez TeslaParrainage, la plateforme innovante qui vous permet de devenir un parrain Tesla et de bénéficier de généreux avantages. En devenant parrain, vous aurez l'opportunité de contribuer à la communauté Tesla tout en participant à l'essor de l'électromobilité. Pour devenir parrain, il vous suffit de rejoindre notre plateforme. En retour, vous pourrez inviter des futurs détenteurs de Tesla à désigner votre nom au moment de l'achat de leur véhicule. Chaque désignation vous permettra de gagner des crédits Tesla que vous pourrez utiliser pour personnaliser votre propre véhicule ou bénéficier de 1000 kilomètres de recharge gratuits, ce qui équivaut à une économie d'environ 300 à 400 euros. Transformez votre passion pour Tesla en profits avec TeslaParrainage.
+            </p>
+        </article>
 
-               <article>
+        <article id="articleFilleul">
+            <a name="devenezFilleul"></a>
+            <h1 id="titreFilleul">Gagnez 20€ si vous êtes sur le point d'acheter une voiture Tesla</h1>
+            <p id="texteFilleul">
+                Découvrez TeslaParrainage, où l'avenir électrique rime avec avantages exclusifs. Lorsque vous achèterez votre véhicule Tesla, vous aurez l'opportunité de désigner un parrain qui a rejoint notre plateforme. Grâce à votre désignation, vous recevrez un généreux cadeau de 20 euros. Rejoignez-nous aujourd'hui et préparez-vous à profiter pleinement de l'électromobilité avec TeslaParrainage.
+            </p>
+        </article>
+    </section>
 
-                              <h1 id="titreParrain">Économisez 300€ sur la consommation énergétique de votre voiture Tesla</h1>
-                              <p id="texteParrain">
-                                             <a name="parrainez"></a>
-                                             Découvrez TeslaParrainage, la plateforme innovante qui vous permet de devenir un parrain Tesla et de bénéficier de généreux avantages. En devenant parrain, vous aurez l'opportunité de contribuer à la communauté TESLA tout en participant à l'essor de l'électromobilité. Pour devenir parrain, il vous suffit de rejoindre notre plateforme. En retour, vous pourrez inviter des futurs détenteurs de Tesla à désigner votre nom au moment de l'achat de leur véhicule. Chaque désignation vous permettra de gagner des crédits TESLA que vous pourrez utiliser pour personnaliser votre propre véhicule ou bénéficier de 1000 kilomètres de recharge gratuits, ce qui équivaut à une économie d'environ 300 à 400 euros. Transformez votre passion pour Tesla en profits avec TeslaParrainage.
-
-                              </p>
-</article>
-<article>
-               <a name="devenezFilleul"></a>
-                              <h1 id="titreFilleul">Gagnez 20€ si vous êtes sur le point d'acheter une voiture Tesla</h1>
-                              <p id="texteFilleul">
-                              Découvrez TeslaParrainage, où l'avenir électrique rime avec avantages exclusifs. Lorsque vous achèterez votre véhicule TESLA, vous aurez l'opportunité de désigner un parrain qui a rejoint notre plateforme. Grâce à votre désignation, vous recevrez un généreux cadeau de 20 euros. Rejoignez-nous aujourd'hui et préparez-vous à profiter pleinement de l'électromobilité avec TeslaParrainage.
-
-                              </p>
-
-               </article>
-
-
-</section>
-
+    <script>
+               const articleParrain = document.getElementById("articleParrain");
+               const articleFilleul = document.getElementById("articleFilleul");
+               const imageDiv = document.getElementById("imageSite");
+           
+               let scrolling = false;
+           
+               window.addEventListener("wheel", function(event) {
+                   const windowBottom = window.scrollY + window.innerHeight;
+           
+                   if (event.deltaY > 0 && !scrolling) {
+                       const targetPositionParrain = windowBottom - articleParrain.offsetTop;
+                       const targetPositionFilleul = windowBottom - articleFilleul.offsetTop;
+           
+                       if (targetPositionParrain >= articleParrain.clientHeight) {
+                           if (targetPositionFilleul >= articleFilleul.clientHeight) {
+                               return;
+                           } else {
+                               setTimeout(function() {
+                                   window.scrollTo({
+                                       top: articleFilleul.offsetTop,
+                                       behavior: "auto"
+                                   });
+           
+                                   scrolling = true;
+           
+                                   setTimeout(function() {
+                                       scrolling = false;
+                                   }, 0);
+                               }, 1000);
+                           }
+                       } else {
+                           setTimeout(function() {
+                               window.scrollTo({
+                                   top: articleParrain.offsetTop,
+                                   behavior: "auto"
+                               });
+           
+                               scrolling = true;
+           
+                               setTimeout(function() {
+                                   scrolling = false;
+                               }, 0);
+                           }, 1000);
+                       }
+                   } else if (event.deltaY < 0 && !scrolling) {
+                       const targetPositionParrain = window.scrollY - articleParrain.offsetTop;
+                       const targetPositionFilleul = window.scrollY - articleFilleul.offsetTop;
+           
+                       if (targetPositionParrain <= 0) {
+                           if (targetPositionFilleul <= 0) {
+                               return;
+                           } else {
+                               setTimeout(function() {
+                                   window.scrollTo({
+                                       top: articleParrain.offsetTop,
+                                       behavior: "auto"
+                                   });
+           
+                                   scrolling = true;
+           
+                                   setTimeout(function() {
+                                       scrolling = false;
+                                   }, 0);
+                               }, 1000);
+                           }
+                       } else {
+                           setTimeout(function() {
+                               window.scrollTo({
+                                   top: articleParrain.offsetTop,
+                                   behavior: "auto"
+                               });
+           
+                               scrolling = true;
+           
+                               setTimeout(function() {
+                                   scrolling = false;
+                               }, 0);
+                           }, 1000);
+                       }
+                   }
+               });
+           </script>
+           
 </body>
 </html>
