@@ -43,88 +43,70 @@
     </section>
 
     <script>
-               const articleParrain = document.getElementById("articleParrain");
-               const articleFilleul = document.getElementById("articleFilleul");
-               const imageDiv = document.getElementById("imageSite");
-           
-               let scrolling = false;
-           
-               window.addEventListener("wheel", function(event) {
-                   const windowBottom = window.scrollY + window.innerHeight;
-           
-                   if (event.deltaY > 0 && !scrolling) {
-                       const targetPositionParrain = windowBottom - articleParrain.offsetTop;
-                       const targetPositionFilleul = windowBottom - articleFilleul.offsetTop;
-           
-                       if (targetPositionParrain >= articleParrain.clientHeight) {
-                           if (targetPositionFilleul >= articleFilleul.clientHeight) {
-                               return;
-                           } else {
-                               setTimeout(function() {
-                                   window.scrollTo({
-                                       top: articleFilleul.offsetTop,
-                                       behavior: "auto"
-                                   });
-           
-                                   scrolling = true;
-           
-                                   setTimeout(function() {
-                                       scrolling = false;
-                                   }, 0);
-                               }, 1000);
-                           }
-                       } else {
-                           setTimeout(function() {
-                               window.scrollTo({
-                                   top: articleParrain.offsetTop,
-                                   behavior: "auto"
-                               });
-           
-                               scrolling = true;
-           
-                               setTimeout(function() {
-                                   scrolling = false;
-                               }, 0);
-                           }, 1000);
-                       }
-                   } else if (event.deltaY < 0 && !scrolling) {
-                       const targetPositionParrain = window.scrollY - articleParrain.offsetTop;
-                       const targetPositionFilleul = window.scrollY - articleFilleul.offsetTop;
-           
-                       if (targetPositionParrain <= 0) {
-                           if (targetPositionFilleul <= 0) {
-                               return;
-                           } else {
-                               setTimeout(function() {
-                                   window.scrollTo({
-                                       top: articleParrain.offsetTop,
-                                       behavior: "auto"
-                                   });
-           
-                                   scrolling = true;
-           
-                                   setTimeout(function() {
-                                       scrolling = false;
-                                   }, 0);
-                               }, 1000);
-                           }
-                       } else {
-                           setTimeout(function() {
-                               window.scrollTo({
-                                   top: articleParrain.offsetTop,
-                                   behavior: "auto"
-                               });
-           
-                               scrolling = true;
-           
-                               setTimeout(function() {
-                                   scrolling = false;
-                               }, 0);
-                           }, 1000);
-                       }
-                   }
-               });
-           </script>
+        const articleParrain = document.getElementById("articleParrain");
+        const articleFilleul = document.getElementById("articleFilleul");
+        const imageDiv = document.getElementById("imageSite");
+    
+        let scrolling = false;
+    
+        window.addEventListener("wheel", function(event) {
+            const windowBottom = window.scrollY + window.innerHeight;
+    
+            if (event.deltaY > 0 && !scrolling) {
+                if (window.scrollY < articleParrain.offsetTop) {
+                    setTimeout(() => {
+                        scrollToElement(articleParrain);
+                    }, 1000);
+                } else if (
+                    window.scrollY >= articleParrain.offsetTop &&
+                    window.scrollY < articleFilleul.offsetTop
+                ) {
+                    setTimeout(() => {
+                        scrollToElement(articleFilleul);
+                    }, 1000);
+                } else if (
+                    window.scrollY >= articleFilleul.offsetTop &&
+                    window.scrollY < imageDiv.offsetTop
+                ) {
+                    setTimeout(() => {
+                        scrollToElement(articleParrain);
+                    }, 1000);
+                }
+            } else if (event.deltaY < 0 && !scrolling) {
+                if (
+                    window.scrollY > articleFilleul.offsetTop &&
+                    window.scrollY <= imageDiv.offsetTop
+                ) {
+                    setTimeout(() => {
+                        scrollToElement(articleParrain);
+                    }, 1000);
+                } else if (
+                    window.scrollY > articleParrain.offsetTop &&
+                    window.scrollY <= articleFilleul.offsetTop
+                ) {
+                    setTimeout(() => {
+                        scrollToElement(articleParrain);
+                    }, 1000);
+                } else if (window.scrollY > articleParrain.offsetTop) {
+                    setTimeout(() => {
+                        scrollToElement(articleFilleul);
+                    }, 1000);
+                }
+            }
+        });
+    
+        function scrollToElement(element) {
+            scrolling = true;
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: "auto"
+            });
+    
+            setTimeout(function() {
+                scrolling = false;
+            }, 0);
+        }
+    </script>
            
 </body>
 </html>
