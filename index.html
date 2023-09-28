@@ -48,29 +48,34 @@
         const imageDiv = document.getElementById("imageSite");
     
         let scrolling = false;
+        let swipeInProgress = false;
     
         window.addEventListener("wheel", function(event) {
+            if (swipeInProgress) {
+                return; // Empêche le défilement lorsque le swipe est en action
+            }
+    
             const windowBottom = window.scrollY + window.innerHeight;
     
             if (event.deltaY > 0 && !scrolling) {
                 if (window.scrollY < articleParrain.offsetTop) {
                     setTimeout(() => {
                         scrollToElement(articleParrain);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 } else if (
                     window.scrollY >= articleParrain.offsetTop &&
                     window.scrollY < articleFilleul.offsetTop
                 ) {
                     setTimeout(() => {
                         scrollToElement(articleFilleul);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 } else if (
                     window.scrollY >= articleFilleul.offsetTop &&
                     window.scrollY < imageDiv.offsetTop
                 ) {
                     setTimeout(() => {
                         scrollToElement(articleParrain);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 }
             } else if (event.deltaY < 0 && !scrolling) {
                 if (
@@ -79,24 +84,26 @@
                 ) {
                     setTimeout(() => {
                         scrollToElement(articleParrain);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 } else if (
                     window.scrollY > articleParrain.offsetTop &&
                     window.scrollY <= articleFilleul.offsetTop
                 ) {
                     setTimeout(() => {
                         scrollToElement(articleParrain);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 } else if (window.scrollY > articleParrain.offsetTop) {
                     setTimeout(() => {
                         scrollToElement(articleFilleul);
-                    }, 1000);
+                    }, 1000); // Délai de 1 seconde après la détection
                 }
             }
         });
     
         function scrollToElement(element) {
             scrolling = true;
+            swipeInProgress = true; // Démarre le swipe
+    
             window.scrollTo({
                 top: element.offsetTop,
                 behavior: "auto"
@@ -104,6 +111,7 @@
     
             setTimeout(function() {
                 scrolling = false;
+                swipeInProgress = false; // Termine le swipe
             }, 0);
         }
     </script>
