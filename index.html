@@ -55,6 +55,12 @@
                 return; // Empêche le défilement lorsque le swipe est en action
             }
     
+            // Empêche le défilement pendant 3 secondes après chaque détection
+            swipeInProgress = true;
+            setTimeout(function() {
+                swipeInProgress = false;
+            }, 3000);
+    
             const windowBottom = window.scrollY + window.innerHeight;
     
             if (event.deltaY > 0 && !scrolling) {
@@ -102,7 +108,6 @@
     
         function scrollToElement(element) {
             scrolling = true;
-            swipeInProgress = true; // Démarre le swipe
     
             window.scrollTo({
                 top: element.offsetTop,
@@ -111,7 +116,6 @@
     
             setTimeout(function() {
                 scrolling = false;
-                swipeInProgress = false; // Termine le swipe
             }, 0);
         }
     </script>
