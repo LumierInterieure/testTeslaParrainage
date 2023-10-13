@@ -100,8 +100,8 @@ border-radius: 6px;
              {
               font-family: 'Croissant one' ,'Courier New', Courier, monospace;
               text-align: center;
-              width: 106.5%;
-              margin-left: -6.5%;
+              width: 102.6%;
+              margin-left: -6.2%;
               font-size: 100%;
               line-height: 400%;
               border: 1px black solid;
@@ -116,7 +116,7 @@ border-radius: 6px;
               background-size: cover;
               background-position: center;
               height: 60vh; /* Réduisez la hauteur de l'élément pour qu'elle corresponde à la hauteur de l'image de fond */
-              max-width: 100%;
+              max-width: 110%;
               font-size: 3vw; /* Ajustez la taille du texte en fonction de la largeur de la fenêtre */
             }
             
@@ -127,7 +127,7 @@ border-radius: 6px;
               background-size: cover;
               background-position: center;
               height: 60vh; /* Réduisez la hauteur de l'élément pour qu'elle corresponde à la hauteur de l'image de fond */
-              max-width: 100%;
+              max-width: 110%;
               font-size: 3vw; /* Ajustez la taille du texte en fonction de la largeur de la fenêtre */
               color: black;
             }
